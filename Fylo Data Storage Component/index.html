@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Fylo Data Storage Component</title>
+</head>
+<body>
+    <div class="card">
+        <div class="topCard">
+            <img src="images/logo.svg"></img>
+            <div class="icons">
+                <img id="doc" src="images/icon-document.svg"></img>
+                <img id="folder" src="images/icon-folder.svg"></img>
+                <img id="upload" src="images/icon-upload.svg"></img>
+            </div>
+        </div>
+        <div class="bottomCard">
+            <p>You've used <strong>815 GB</strong> of your storage</p>
+            <meter max="1000" value="815"></meter>
+            <strong class="progress" id="min">0 GB</strong>
+            <strong class="progress" id="max">1000 GB</strong>
+            <h2>185 <span>GB LEFT</span></h2>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.topCard, .bottomCard {
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px;
+}
+
+.topCard {
+    border-top-right-radius: 100px;
+    height: 200px;
+    padding-left: 45px;
+    padding-top: 45px;
+    margin-bottom: 15px;
+    width: 325px;
+}
+
+.icons img {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+#doc {
+    padding-inline: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#folder {
+    padding-inline: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#upload {
+    padding-inline: 10px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.bottomCard {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    width: 325px;
+}
+
+.bottomCard p {
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.progress {
+    color: hsl(243, 100%, 93%);
+    font-family: 'Raleway', sans-serif;
+}
+
+#min {
+    transform: translateX(-100px);
+}
+
+#max {
+    transform: translate(100px, -22px);
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    background-color: white;
+    width: fit-content;
+    padding-inline: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transform: translateY(-8px);
+}
+
+h2 span {
+    color: hsl(229, 7%, 55%);
+    font-size: 14px;
+}
+
+meter {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+meter::-webkit-meter-bar {
+    background-color: hsla(229, 57%, 11%, 0.5);
+    height: 20px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+}
+
+@media (min-width: 955px) {
+    html {
+        background-color: hsl(229, 57%, 11%);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+    }
+
+    .card {
+        display: flex;
+        gap: 40px;
+    }
+
+    .topCard {
+        width: 375px;
+    }
+
+    .bottomCard {
+        width: 500px;
+        transform: translateY(50px);
+    }
+
+    meter {
+        width: 400px;
+    }
+
+    #min {
+        transform: translateX(-175px);
+    }
+    
+    #max {
+        transform: translate(160px, -22px);
+    }
+
+    .bottomCard p{
+        transform: translateX(-85px);
+    }
+
+    h2{
+        transform: translate(120px, -180px);
+    }
+}
